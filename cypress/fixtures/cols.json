@@ -1,0 +1,6 @@
+{
+    "cols":[
+        {"label":"Topping","type":"string"},
+        {"label":"Slices","type":"number"}
+    ]
+}
