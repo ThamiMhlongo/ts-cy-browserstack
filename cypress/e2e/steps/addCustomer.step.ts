@@ -24,7 +24,3 @@ When('I fill the post code input with the {string} term on the Add Customer page
 When('I click on the add customer submit button on the Manager page', function () {
     this.add_Customer_page.submitCustomer()
 })
-
-Then('I should see the alert with the {string} text', function (text: string) {
-    this.add_Customer_page.arletCustomerAdded(text)
-})

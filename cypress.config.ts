@@ -3,6 +3,9 @@ import createBundler from '@bahmutov/cypress-esbuild-preprocessor'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 import createEsbuildPlugin from '@badeball/cypress-cucumber-preprocessor/esbuild'
 
+// https://dev.to/sanzhanov/testing-excel-data-with-cypress-1f1n
+
+
 async function setupNodeEvents(
     on: Cypress.PluginEvents,
     config: Cypress.PluginConfigOptions
@@ -21,8 +24,9 @@ async function setupNodeEvents(
 
 export default defineConfig({
     e2e: {
-        baseUrl: 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login',
+        //baseUrl: 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login',
         specPattern: '**/*.feature',
         setupNodeEvents,
+
     },
 })

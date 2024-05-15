@@ -1,5 +1,5 @@
 @duckduckgo
-Feature: Search engine on the Duckduckgo website
+Feature: Create a customer and account on XYZ Bank website
 
   Background:
     Given I go to the XYZ page
@@ -13,13 +13,13 @@ Feature: Search engine on the Duckduckgo website
     When I fill the last name input with the "Mhlongo" term on the Add Customer page
     When I fill the post code input with the "2000" term on the Add Customer page
     When I click on the add customer submit button on the Manager page
-    # Then I should see the alert with the [] text
+    Then I should see the alert with the "Customer added successfully with customer id" text
 
     When I click on the open account button on the Add Customer page
-    # When I select dropdown input with the "Thami Mhlongo" term on the Open Account page
-    # When I select dropdown input with the "Dollar" text on the Open Account page
-    # When I click on the process submit button on the Open Account page
-    # Then I should see the alert with the "Account" text
+    When I select dropdown input with the "Thami Mhlongo" term on the Open Account page
+    When I select dropdown input with the "Dollar" text on the Open Account page
+    When I click on the process submit button on the Open Account page
+    Then I should see the alert with the "Account created successfully with account Number" text
 
 
 #   Scenario Outline: Using the search input with the text "<search_text>"

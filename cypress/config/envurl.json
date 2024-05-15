@@ -1,0 +1,7 @@
+{
+    "urls":{
+        "devurl" : "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
+        "testurl" : "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
+        "stageurl" : "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"
+    }
+}

@@ -7,11 +7,14 @@ export default class AddCustomer {
     private readonly CSS_BUTTON_SUBMIT_ADD_CUSTOMER = 'button[type="submit"]'
 
     goToAddCustomer(): void {
-        cy.get(this.CSS_BUTTON_ADD_CUSTOMER).should('be.visible').click()
+            cy.get(this.CSS_BUTTON_ADD_CUSTOMER).should('be.visible').click()
+
     }
 
     addFirstName(text: string): void {
-        cy.get(this.CSS_INPUT_FIRST_NAME).should('be.visible').type(text)
+    cy.get(this.CSS_INPUT_FIRST_NAME).should('be.visible').type(text)
+
+ 
     }
 
     addLastName(text: string): void {
@@ -26,9 +29,4 @@ export default class AddCustomer {
         cy.get(this.CSS_BUTTON_SUBMIT_ADD_CUSTOMER).should('be.visible').click()
     }
 
-    arletCustomerAdded(text: string): void {
-        cy.on('window:alert', (str) => {
-            expect(str).to.contain(text)
-        })
-    }
 }
